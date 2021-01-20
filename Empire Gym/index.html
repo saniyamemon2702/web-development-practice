@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Fitness Centre</title>
+    <link rel="stylesheet" href="css files/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+            /*to reset margin padding of body */
+            padding: 0px;
+            background: url(img/img1.jpg) no-repeat fixed;     
+            background-size: cover;
+            color: white;
+            background-repeat: no-repeat;
+            background-size:inherit;
+        }
+
+        /* header{
+    border:2px solid yellowgreen;
+} */
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            /* border: 2px solid red; */
+
+        }
+
+        .left img {
+            /* align:center; */
+            width: 120px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 10px;
+            font-size: 25px;
+            margin: 4px;
+        }
+
+
+        .mid {
+            display: block;
+            /* border: 2px solid red; */
+            width: 50%;
+            margin: 20px auto;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 35px;
+            display: inline-block;
+            /* border: 2px solid red; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: transparent;
+            padding: 4px 14px;
+            border: 2px solid rgb(165, 165, 165);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(202, 201, 201);
+            color: black;
+        }
+
+        .container {
+            border: 2px dashed white; 
+            margin: 50px 60px;
+            padding: 75px;
+            width: 50%;
+            border-radius: 28px;
+        }
+
+        .container h1 {
+            text-align: center;
+    
+        }
+
+        .container button {
+            display: block;
+            width: 20;
+            font-size: 20px;
+        }
+
+        .form-group {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            background-color: transparent;
+            display: inline-block;
+            font-size: 25px;
+            margin: 15px 140px;
+            padding: 11px auto;
+            border: 4px solid white;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom-color: white;
+            border-radius: 8px;
+            width: 80%
+            
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: 40px auto;
+        }
+
+        .labels {
+
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: transparent;
+            display: inline;
+            position:absolute;
+            margin: 15px;
+            font-size: 25px;
+             border:transparent;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left logo -->
+        <div class="left">
+            <img src="/img/lo.png" alt="">
+            <div>SM Fitness</div>
+        </div>
+        <!-- mid navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+        </div>
+        <!-- rigth searchbox -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Register yourself to  the best gym of the City...</h1>
+        <form action="regi.html">
+            <!-- <div>
+                <label class="form-group">Name: </label>
+            </div>            -->
+            <div class="labels">
+                <label> Name:</label>
+            </div>
+            <div>
+                <input type="text" class="form-group" placeholder="Enter your name...">
+            </div>
+
+            <div class="labels">
+                <label> Age:</label>
+            </div>
+            <div>
+                <input type="number" class="form-group" placeholder="Enter your age...">
+            </div>
+
+            <div class="labels">
+                <label> Gender:</label>
+            </div>
+            <div> <input type="text" class="form-group" placeholder="Enter your gender...">
+            </div>
+
+            <div class="labels">
+                <label> Address:</label>
+            </div>
+            <div>
+                <input type="text" class="form-group" placeholder="Enter your address...">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
