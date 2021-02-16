@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            /* border: 2px solid red; */
+            grid-template-areas:
+                'navbar'
+                'section'
+                'footer';
+        }
+
+        #navbar {
+            grid-area: 'navbar';
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            /* justify-content: center; */
+            opacity: 0.8;
+
+        }
+
+        #navbar span {
+            color: rgba(77, 117, 248, 0.897);
+            font-weight: bold;
+            margin: 0.5vw;
+            padding: 0.5vw;
+            /* border: 2px solid pink; */
+            /* padding-left: 0.6vw; */
+            font-size: 2em;
+            font-family: cursive;
+            text-align: left;
+        }
+
+        #section {
+            grid-area: 'section';
+            margin: 0.5vw;
+            padding: 0.5vw;
+        }
+
+        #section p {
+            color: rgba(248, 194, 77, 0.897);
+            margin: 2vw;
+            font-size: 2em;
+            font-family: cursive;
+            text-align: center;
+        }
+
+        #section h2 {
+            color: rgba(250, 94, 250, 0.897);
+            font-size: 3em;
+            font-family: cursive;
+            text-align: center;
+            text-justify: center;
+            text-decoration: underline;
+        }
+
+        #footer {
+            grid-area: 'footer';
+            font-family: cursive;
+            text-align: center;
+            font-size: 1.2vw;
+            /* text-justify:center; */
+        }
+
+
+        /* Media queries */
+        @media only screen and (max-width: 400px){
+            #navbar {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            #navbar span {
+                display: block;
+                font-size: 0.7em;
+                /* border: 2px solid red; */
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 200px) {
+            #navbar {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #navbar span {
+                display: block;
+                /* font-size: 0.8em; */
+                text-align: center;
+            }
+            
+    
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <span class="span">Home</span>
+            <span class="span">About Us</span>
+            <span class="span">Contact Us</span>
+        </nav>
+        <section id="section">
+            <h2>Welcome to My World</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, deleniti. Aliquam quod veritatis tenetur
+                explicabo repellat ipsum nisi sapiente similique incidunt recusandae, possimus amet at error, neque
+                quidem nostrum ipsam iusto aut, non enim. Ipsam dolores vel obcaecati nesciunt incidunt sint porro earum
+                voluptatem consequuntur beatae necessitatibus quae, veritatis fugiat libero. Quia eum illo minima
+                tempora provident quisquam perspiciatis officiis nobis nesciunt repellendus earum obcaecati, aut,
+                quibusdam ut laudantium! Eveniet maiores sed nam itaque numquam exercitationem esse labore reiciendis
+                beatae tenetur dicta soluta, praesentium libero vel deserunt maxime quaerat ad asperiores cum tempore
+                dolor dolorem? Velit dicta ipsum vero ratione tempora impedit explicabo hic, qui laboriosam laudantium.
+                Tempore iure architecto ipsa modi eos nisi vel id, similique saepe recusandae dolore!</p>
+        </section>
+
+        <footer id="footer">
+            Copyright &copy; The Hizabi Programmer. All rights reseved
+        </footer>
+    </div>
+</body>
+
+</html>
