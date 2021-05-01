@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid mediumslateblue; */
+  justify-content: center;
+}
+
+#icon {
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  height: 7%;
+  width: 7%;
+}
+
+h1 {
+  /* border-bottom: 2px solid rgb(155, 151, 151); */
+  padding: 1.5em;
+  display: inline;
+  color: rgb(155, 151, 151);
+  font-size: 1.2em;
+  /* text-decoration: underline; */
+}
+.gallary {
+  width: 30%;
+  height: 40vh;
+  margin: calc(10% / 6);
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.gallary:hover {
+  transform: scale(1.1);
+  box-shadow: 0.1em 0.4em 1em 0.3em rgba(122, 122, 120, 0.541);
+  /* box-shadow: 0.1em 0.4em 1em 0.3em inset; */
+  box-sizing: border-box;
+  border-radius: 0%;
+  border: none;
+  cursor: pointer;
+}
