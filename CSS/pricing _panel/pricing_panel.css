@@ -1,0 +1,70 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  /* border: 2px solid black; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006d77;
+  font-family: "Montserrat", sans-serif;
+}
+.main {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  background-color: rgba(255, 255, 255, 0.877);
+  border-radius: 10px;
+}
+div {
+  padding: 20px;
+}
+div:nth-of-type(1),
+div:nth-of-type(2) {
+  border-right: 2px solid #78b9b3;
+  box-sizing: border-box;
+}
+span {
+  display: block;
+  color: #2b7971;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  /* border: 2px solid green; */
+  text-align: center;
+  font-weight: bolder;
+}
+button {
+  border: 2px solid #006d77;
+  display: block;
+  background-color: transparent;
+  border-radius: 0.2em;
+  font-size: 1.2em;
+  color: #006d77;
+  margin: 0.5em auto;
+  padding: 0.2em 0.5em;
+}
+
+button:hover {
+  box-shadow: 0em 0.2em 0.2em #006d7762;
+  transform: translateY(-0.24em);
+}
+button:active {
+  background-color: #006d77;
+  color: rgba(255, 255, 255, 0.877);
+}
+img {
+  height: 200px;
+  width: 250px;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+h3 {
+  text-align: center;
+  /* border: 2px solid green; */
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  color: #3f9c93;
+}
