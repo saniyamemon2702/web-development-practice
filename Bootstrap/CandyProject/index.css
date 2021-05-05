@@ -51,7 +51,6 @@ body {
 }
 /* for responsive menubar--froamtting toggler */
 .navbar-toggler {
-  /* background-color: transparent; */
   border: 1px solid #c79fa1e7;
 }
 .navbar-toggler-icon {
@@ -59,5 +58,69 @@ body {
 }
 
 .carousel-item img {
-  height: 90vh;
+  height: 80vh;
+}
+/* -----------navbar completed-------------- */
+/* home section */
+#home,
+#ourProducts {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+#home h1,
+#ourProducts h1 {
+  color: #914449;
+  font-family: "Cinzel", serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem auto;
+  text-decoration: none;
+}
+#home p {
+  color: #b37074;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  padding: 0.5rem 2rem;
+
+  /* border: 2px solid red; */
+}
+/* ------Our Products section---------- */
+#ourProducts {
+  margin: 0;
+  padding: 0;
+}
+.row-cols-1 {
+  margin: 0;
+  /* border: 2px solid red; */
+  padding: 0;
+}
+
+.card {
+  margin: 0%;
+  border: 1px solid #cca2a5;
+  /* box-shadow: 0.1em 0.2em 0.05em #b37074; */
+}
+.card img {
+  height: 50vh;
+}
+.card-title {
+  color: #914449;
+  font-family: "Cinzel", serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+
+  /* margin: 2rem auto; */
+  /* text-decoration: underline; */
+}
+.card-text {
+  color: #b37074;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  /* padding: 0.5rem 2rem; */
 }
