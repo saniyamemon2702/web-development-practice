@@ -5,7 +5,10 @@ body {
   background-color: #f7dfe1d5;
   width: 100%;
 }
-
+section {
+  /* margin: 20rem 2rem; */
+  /* padding: 3rem 2rem; */
+}
 /* navbar's first div..... */
 /* .cotainer-fluid {
   display: flex;
@@ -69,17 +72,22 @@ body {
   margin-right: 1rem;
 }
 #home h1,
-#ourProducts h1 {
+#ourProducts h1,
+#about h1,
+#about h2,
+#contact h1 {
   color: #914449;
   font-family: "Cinzel", serif;
   font-weight: bolder;
   text-align: center;
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   text-decoration: none;
 }
-#home p {
+#home p,
+#about p,
+#about li {
   color: #b37074;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -99,12 +107,12 @@ body {
 }
 
 .card {
-  margin: 0%;
+  padding: 2rem;
   border: 1px solid #cca2a5;
   /* box-shadow: 0.1em 0.2em 0.05em #b37074; */
 }
 .card img {
-  height: 50vh;
+  height: 40vh;
 }
 .card-title {
   color: #914449;
@@ -123,4 +131,29 @@ body {
   font-weight: 500;
   text-align: center;
   /* padding: 0.5rem 2rem; */
+}
+/* ------------about us section---------- */
+#about ul {
+  list-style: square;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ------------Contact us------------ */
+#contact div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #aa545a;
+}
+#contact div p {
+  margin: 0.7rem;
+}
+/* ----------- to change scrolling effect------------ */
+.navbar.scroll {
+  background-color: #d4bbbce7;
 }
