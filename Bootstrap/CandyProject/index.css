@@ -63,9 +63,10 @@ body {
 /* home section */
 #home,
 #ourProducts {
-  margin-top: 4rem;
+  /* margin-top: 4rem;
   margin-left: 2rem;
-  margin-right: 1rem;
+  margin-right: 1rem; */
+  margin: 4rem 4rem;
 }
 #home h1,
 #ourProducts h1,
@@ -103,7 +104,7 @@ body {
 }
 
 .card {
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid #cca2a5;
   /* box-shadow: 0.1em 0.2em 0.05em #b37074; */
 }
@@ -145,9 +146,21 @@ body {
   font-weight: 500;
   text-align: center;
   color: #aa545a;
+  /* margin-bottom: ; */
 }
 #contact div p {
-  margin: 0.7rem;
+  margin: 0.8rem;
+}
+/* ------------foooter------------ */
+#footer {
+  /* border: 2px solid red; */
+  background-color: #d4bbbce7;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-weight: 500;
+  color: #9c3c42;
+  /* margin: 2rem 2rem; */
+  padding: 1rem 1rem;
 }
 /* ----------- to change scrolling effect------------ */
 .navbar.scroll {
