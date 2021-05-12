@@ -1,4 +1,4 @@
-// Excrecise-1: Define printHeart function to print <3
+// Excrecise-1: Defining simple functions...getting started
 console.clear();
 function printHeart() {
   console.log("<3");
@@ -6,8 +6,14 @@ function printHeart() {
 
 printHeart();
 
-// Excrecise-2
-// console.clear();
+// Excrecise-2: Function with one argument...
+console.clear();
+function rant(message) {
+  for (let index = 0; index < 3; index++) {
+    console.log(message.toUpperCase());
+  }
+}
+rant("I hate beets...");
 
 // // Excrecise-3
 // console.clear();
