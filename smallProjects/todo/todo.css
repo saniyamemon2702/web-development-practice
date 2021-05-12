@@ -1,0 +1,19 @@
+/* page setup */
+body {
+  margin: 0%;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container class CSS */
+.card {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.486);
+  border: 1px solid rgb(161, 159, 159);
+}
