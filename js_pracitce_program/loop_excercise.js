@@ -17,10 +17,9 @@ for (let i = 25; i>=0; i-=5) {
     
 }
 
-// Excercise-2: loop over array named people and print each name in UPPERCASE..
+// Excercise-3: loop over array named people and print each name in UPPERCASE..
 console.clear();
 const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
 for (let i = 0; i < people.length; i++) {
-    // const element = people[i];
     console.log(people[i].toUpperCase());
 }
