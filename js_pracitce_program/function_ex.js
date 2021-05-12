@@ -15,9 +15,18 @@ function rant(message) {
 }
 rant("I hate beets...");
 
-// // Excrecise-3
-// console.clear();
-
+// // Excrecise-3: Function with multiple arguments...
+console.clear();
+function isSnakeEyes(dice1, dice2) {
+  if (dice1 === 1 && dice2 === 1) {
+    console.log("Snake Eyes!");
+  } else {
+    console.log("Not Snake Eyes!");
+  }
+}
+isSnakeEyes(1, 1);
+isSnakeEyes(1, 5);
+isSnakeEyes(4, 5);
 // // Excrecise-4
 // console.clear();
 
