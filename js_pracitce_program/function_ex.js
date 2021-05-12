@@ -93,3 +93,26 @@ function sumArray(array) {
 sumArray([1, 2, 3]);
 sumArray([2, 2, 2, 2]);
 sumArray([50, 50, 1]);
+
+// // Excrecise-8: Write function to return day of the week based on number...
+console.clear();
+function returnDay(dayNum) {
+  const days = {
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday",
+    7: "Sunday",
+  };
+  if (dayNum <= 0 || dayNum > 7) {
+    return null;
+  } else {
+    return days.dayNum;
+  }
+}
+
+returnDay(7);
+returnDay(4);
+returnDay(0);
