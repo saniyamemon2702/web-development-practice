@@ -53,11 +53,43 @@ isShortsWeather(80);
 isShortsWeather(48);
 isShortsWeather(75);
 
-// // Excrecise-6
-// console.clear();
+// // Excrecise-6: Prcaticing more...
+console.clear();
+function lastElement(array) {
+  if (array.length !== 0) {
+    return array[array.length - 1];
+  } else {
+    return null;
+  }
+}
 
-// // Excrecise-7
-// console.clear();
+console.log(lastElement([3, 5, 7]));
+console.log(lastElement([1]));
+console.log(lastElement([]));
 
-// // Excrecise-8
-// console.clear();
+// // Excrecise-7:  Write function to capitalze first letter of passed string...
+console.clear();
+function capitalize(str) {
+  let firstLetter = str.charAt(0).toUpperCase();
+  let remainingStr = str.slice(1);
+  //   console.log(firstLetter);
+  console.log(firstLetter + remainingStr);
+  return firstLetter + remainingStr;
+}
+capitalize("eggplant");
+capitalize("pamplemousse");
+capitalize("squid");
+
+// // Excrecise-8: Write function to Add array elements...
+console.clear();
+function sumArray(array) {
+  sum = 0;
+  for (const iterator of array) {
+    sum += iterator;
+  }
+  return sum;
+}
+
+sumArray([1, 2, 3]);
+sumArray([2, 2, 2, 2]);
+sumArray([50, 50, 1]);
