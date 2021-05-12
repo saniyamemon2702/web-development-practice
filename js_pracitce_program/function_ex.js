@@ -40,8 +40,18 @@ console.log(product);
 product = multiply(5, 4);
 console.log(product);
 
-// // Excrecise-5
-// console.clear();
+// // Excrecise-5: Practicing...
+console.clear();
+function isShortsWeather(temperature) {
+  if (temperature >= 75) {
+    return true;
+  } else {
+    return false;
+  }
+}
+isShortsWeather(80);
+isShortsWeather(48);
+isShortsWeather(75);
 
 // // Excrecise-6
 // console.clear();
