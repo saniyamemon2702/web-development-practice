@@ -27,8 +27,18 @@ function isSnakeEyes(dice1, dice2) {
 isSnakeEyes(1, 1);
 isSnakeEyes(1, 5);
 isSnakeEyes(4, 5);
-// // Excrecise-4
-// console.clear();
+
+// // Excrecise-4:Returning value from function...
+console.clear();
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+let product = multiply(2, 3);
+console.log(product);
+product = multiply(9, 9);
+console.log(product);
+product = multiply(5, 4);
+console.log(product);
 
 // // Excrecise-5
 // console.clear();
