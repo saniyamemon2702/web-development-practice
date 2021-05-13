@@ -138,3 +138,19 @@ const square = {
 
 square.area(10);
 square.perimeter(10);
+
+// Excrecise-11: this keyword
+console.clear();
+const hen = {
+  name: "helen",
+  eggCount: 0,
+  layAnEgg() {
+    this.eggCount += 1;
+    return "EGG";
+  },
+};
+hen.name;
+hen.eggCount;
+hen.layAnEgg();
+hen.layAnEgg();
+hen.eggCount;
