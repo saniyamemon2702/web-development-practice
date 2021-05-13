@@ -124,3 +124,17 @@ const square = function (number) {
 };
 square(4);
 square(3);
+
+// Excrecise-10: Methods
+console.clear();
+const square = {
+  area(side) {
+    return side ** 2;
+  },
+  perimeter(side) {
+    return side * 4;
+  },
+};
+
+square.area(10);
+square.perimeter(10);
