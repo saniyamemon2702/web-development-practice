@@ -116,3 +116,11 @@ function returnDay(dayNum) {
 returnDay(7);
 returnDay(4);
 returnDay(0);
+
+// // Excrecise-9: Write function expression to square a number
+console.clear();
+const square = function (number) {
+  return number * number;
+};
+square(4);
+square(3);
