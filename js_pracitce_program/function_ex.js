@@ -125,19 +125,19 @@ const square = function (number) {
 square(4);
 square(3);
 
-// Excrecise-10: Methods
-console.clear();
-const square = {
-  area(side) {
-    return side ** 2;
-  },
-  perimeter(side) {
-    return side * 4;
-  },
-};
+// // Excrecise-10: Methods
+// console.clear();
+// const square = {
+//   area(side) {
+//     return side ** 2;
+//   },
+//   perimeter(side) {
+//     return side * 4;
+//   },
+// };
 
-square.area(10);
-square.perimeter(10);
+// square.area(10);
+// square.perimeter(10);
 
 // Excrecise-11: this keyword
 console.clear();
@@ -154,3 +154,22 @@ hen.eggCount;
 hen.layAnEgg();
 hen.layAnEgg();
 hen.eggCount;
+
+// Ex-12 Filter Method in Arrays
+console.clear();
+userNames = [
+  "mark",
+  "staceysmom1987",
+  "q29832128238983",
+  "carrie98",
+  "MoanaFan",
+];
+const validUserNames = userNames.filter((user) => {
+  return user.length < 10;
+});
+
+// Ex-13 Some/Every Method in Arrays
+console.clear();
+const allEvens = (array) => {
+  return array.every((element) => element % 2 === 0);
+};
