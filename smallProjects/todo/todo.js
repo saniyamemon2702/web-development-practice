@@ -1,14 +1,15 @@
 console.log("successfully connected...");
 let tasks = [];
 
+// fetching table's body tag
+
+const tBody = document
+  .getElementById("myTable")
+  .getElementsByTagName("tbody")[0];
+console.log("table fetched successfully...", tBody);
+
 //Function for adding new task to the table
 function addNewTask() {
-  // fetching table's body tag
-  const tBody = document
-    .getElementById("myTable")
-    .getElementsByTagName("tbody")[0];
-  console.log("table fetched successfully...", tBody);
-
   // creating new row
 
   var myRow = tBody.insertRow();
@@ -55,8 +56,22 @@ function addNewTask() {
 //doneTask button click event
 function deleteTask(r) {
   var i = r.parentNode.parentNode.rowIndex;
+  console.log("i is:" + i);
   if (confirm("Are you sure you want to delete this task?")) {
-    document.getElementById("myTable").deleteRow(i);
+    const deletedRow = document.getElementById("myTable").deleteRow(i);
+    tasks.splice(i - 1, 1);
+    if (tasks.length > 0) {
+      for (let j = i; j <= tasks.length; j++) {
+        const nextTd = document
+          .getElementById(`row-${j}`)
+          .getElementsByTagName("td")[0];
+        const nextRow = document.getElementById(`row-${j}`);
+        nextRow.setAttribute("id", `row-${j - 1}`);
+        console.log("j is:" + j);
+        console.log("next riw is", nextRow);
+        nextTd.textContent = j;
+      }
+    }
   }
-  // alert("Task deleted successfully!!!");
+  console.log(tasks);
 }
