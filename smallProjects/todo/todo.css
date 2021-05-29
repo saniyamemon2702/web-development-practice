@@ -13,7 +13,13 @@ body {
 
 /* container class CSS */
 .card {
-  width: 70%;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.486);
   border: 1px solid rgb(161, 159, 159);
+  font-weight: 500;
+}
+
+.doneTask {
+  text-decoration: line-through;
+  color: grey;
 }
