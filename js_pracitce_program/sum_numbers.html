@@ -9,31 +9,37 @@
         do {//for multipple entries
             //for fetching data from user
             sum = 0;
-            userInput = parseFloat(prompt("Enter any top Number to sum from 0 through 100"));
+            userInput = prompt("Enter any top Number to sum from 0 through 100");
             //chckpoint
             console.log(userInput, "fetched");
+            if (userInput === null) {
+                console.log("user hit cancel button");
+                break;
+            }
+            else {
+                userInput = parseFloat(userInput);
+                if (isNaN(userInput)) { //checking whether user entered number only 
+                    alert("Invalid Input!");//if user entered any string, will display msg...
+                } else if (userInput >= 0 && userInput <= 100) {
+                    for (let index = 1; index <= userInput; index++) {
+                        sum += index;
 
-            if (isNaN(userInput)) { //checking whether user entered number only 
-                alert("Invalid Input!");//if user entered any string, will display msg...
-            } else if (userInput >= 0 && userInput <= 100) {
-                for (let index = 1; index <= userInput; index++) {
-                    sum += index;
+                        //checkpoint
+                        console.log("sum after adding " + index + " is : " + sum)
+                    }
+                    alert("The sum of the numbers from 1 through " + userInput + " is " + sum);
+
+                    //aksing user whether wanted to do anther sum or not.
+                    moreSum = prompt("Do another sum?");
 
                     //checkpoint
-                    console.log("sum after adding " + index + " is : " + sum)
-                }
-                alert("The sum of the numbers from 1 through " + userInput + " is " + sum);
+                    console.log(moreSum + " fetched");
 
-                //aksing user whether wanted to do anther sum or not.
-                moreSum = prompt("Do another sum?");
-
-                //checkpoint
-                console.log(moreSum + " fetched");
-
-                if (moreSum === "y") {
-                    continue;
-                } else { break; }
-            } else { alert("Please enter a number between 1 and 100"); }
+                    if (moreSum === "y") {
+                        continue;
+                    } else { break; }
+                } else { alert("Please enter a number between 1 and 100"); }
+            }
         } while (true);
     </script>
 </head>

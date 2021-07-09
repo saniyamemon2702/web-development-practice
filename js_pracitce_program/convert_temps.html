@@ -10,24 +10,33 @@
 
         while (true) { //for multipple entries
             //for fetching data from user
-            fahrenheit = parseFloat(prompt("Enter Fahrenheit Temperature or \nEnter 999 to end the application:"));
-            //checkpoint
-            console.log(fahrenheit, "fetched");
-
-            //checking whether user want to exit thr applcation or want to continue
-            //if user entered 999, loop will break and control goes to next statment after the loop ends (here, application will be ended)
-            if (fahrenheit === 999) {
+            fahrenheit = prompt("Enter Fahrenheit Temperature or \nEnter 999 to end the application:");
+            if (fahrenheit == null) {
+                console.log("USer pressed cancel");
                 break;
-
-            } else if (isNaN(fahrenheit)) { //checking whether user entered number only 
-                alert("Invalid Input!");//if user entered any string, will display msg...
-
-            } else if (fahrenheit >= -100 && fahrenheit <= 212) {//range
-                celsius = (fahrenheit - 32) * 5 / 9;//conversion from f to c
-                alert("Fahrenheit Temperature is: " + fahrenheit + "\n Celsius Temperature is: " + celsius);
             }
-            else { //if user has not entered the number between the range, will diplay following msg
-                alert("You Entered: " + fahrenheit + "\n Entry must range from -100 to 212");
+            else {
+                fahrenheit = parseFloat(fahrenheit);
+                //checkpoint
+                console.log(fahrenheit, "fetched");
+                if (isNaN(fahrenheit)) {
+                    alert("Empty Input!");
+                }
+                //checking whether user want to exit thr applcation or want to continue
+                //if user entered 999, loop will break and control goes to next statment after the loop ends (here, application will be ended)
+                else if (fahrenheit === 999) {
+                    break;
+
+                } else if (isNaN(fahrenheit)) { //checking whether user entered number only 
+                    alert("Invalid Input!");//if user entered any string, will display msg...
+
+                } else if (fahrenheit >= -100 && fahrenheit <= 212) {//range
+                    celsius = (fahrenheit - 32) * 5 / 9;//conversion from f to c
+                    alert("Fahrenheit Temperature is: " + fahrenheit + "\n Celsius Temperature is: " + celsius);
+                }
+                else { //if user has not entered the number between the range, will diplay following msg
+                    alert("You Entered: " + fahrenheit + "\n Entry must range from -100 to 212");
+                }
             }
         }
     </script>

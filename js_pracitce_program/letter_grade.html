@@ -5,39 +5,55 @@
 	<meta charset="utf-8">
 	<title>Show letter grade</title>
 	<script>
-		var letterGrade, numGrade;
+		var numGrade;
 		while (true) {//for multipple entries
-			//for fetching data from user
-			numGrade = parseFloat(prompt("Enter Number Grade from 0 through 100 or \nEnter 999 to end the entires:"));
-			//chckpoint
-			console.log(numGrade, "fetched");
 
-			//checking whether user want to exit thr applcation or want to continue
-			//if user entered 999, loop will break and control goes to next statment after the loop ends (here, application will be ended)
-			if (numGrade === 999) {
+			// for fetching data from user
+			numGrade = prompt("Enter Number Grade from 0 through 100 or \nEnter 999 to end the entires:");
+			//chckpoint
+			console.log(numGrade);
+
+			if (numGrade === null) {
+				//chckpoint
+				console.log("user hit cancle button...");
 				break;
-			} else if (isNaN(numGrade)) { //checking whether user entered number only 
-				alert("Invalid Input!");//if user entered any string, will display msg...
-			} else if (numGrade >= 0 && numGrade <= 100) {
-				// To derive the letter grade, you should use this table:
-				// A 88 - 100
-				// B 80 - 87
-				// C 68 - 79
-				// D 60 - 67
-				// F < 60
-				if (numGrade >= 88 && numGrade <= 100) {
-					alert("Number Grade= " + numGrade + "\n Letter Grade= A");
-				} else if (numGrade >= 80 && numGrade <= 87) {
-					alert("Number Grade= " + numGrade + "\n Letter Grade= B");
-				} else if (numGrade >= 68 && numGrade <= 79) {
-					alert("Number Grade= " + numGrade + "\n Letter Grade= C");
-				} else if (numGrade >= 60 && numGrade <= 67) {
-					alert("Number Grade= " + numGrade + "\n Letter Grade= D");
-				} else if (numGrade < 60) {
-					alert("Number Grade= " + numGrade + "\n Letter Grade= F");
+			}
+			else {
+
+				//checkpoint
+				console.log("lngth:", numGrade.length);
+				numGrade = parseFloat(numGrade);
+				// if user directly press enter button wihtout any input , will display msg.
+				if (numGrade == 999) {
+					//chckpoint
+					console.log("user enterd 999, user wants to close application.");
+					break;
+				} else if (isNaN(numGrade)) { //checking whether user entered number only
+					alert("Invalid or Empty Input!");
 				}
+				else if (numGrade >= 0 && numGrade <= 100) {
+					// console.log("length" + numGrade.length);
+
+					if (numGrade >= 88 && numGrade <= 100) {
+						alert("Number Grade= " + numGrade + "\n Letter Grade= A");
+					} else if (numGrade >= 80 && numGrade <= 87) {
+						alert("Number Grade= " + numGrade + "\n Letter Grade= B");
+					} else if (numGrade >= 68 && numGrade <= 79) {
+						alert("Number Grade= " + numGrade + "\n Letter Grade= C");
+					} else if (numGrade >= 60 && numGrade <= 67) {
+						alert("Number Grade= " + numGrade + "\n Letter Grade= D");
+					} else if (numGrade < 60 && numGrade >= 0) {
+						alert("Number Grade= " + numGrade + "\n Letter Grade= F");
+					}
+				} else {
+					alert(" You Entered: " + numGrade + "\nPlease, Enter number between 0 to 100");
+				}
+
 			}
 		}
+
+
+
 
 	</script>
 </head>
