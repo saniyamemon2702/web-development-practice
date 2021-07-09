@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	<script>
+		var letterGrade, numGrade;
+		while (true) {//for multipple entries
+			//for fetching data from user
+			numGrade = parseFloat(prompt("Enter Number Grade from 0 through 100 or \nEnter 999 to end the entires:"));
+			//chckpoint
+			console.log(numGrade, "fetched");
+
+			//checking whether user want to exit thr applcation or want to continue
+			//if user entered 999, loop will break and control goes to next statment after the loop ends (here, application will be ended)
+			if (numGrade === 999) {
+				break;
+			} else if (isNaN(numGrade)) { //checking whether user entered number only 
+				alert("Invalid Input!");//if user entered any string, will display msg...
+			} else if (numGrade >= 0 && numGrade <= 100) {
+				// To derive the letter grade, you should use this table:
+				// A 88 - 100
+				// B 80 - 87
+				// C 68 - 79
+				// D 60 - 67
+				// F < 60
+				if (numGrade >= 88 && numGrade <= 100) {
+					alert("Number Grade= " + numGrade + "\n Letter Grade= A");
+				} else if (numGrade >= 80 && numGrade <= 87) {
+					alert("Number Grade= " + numGrade + "\n Letter Grade= B");
+				} else if (numGrade >= 68 && numGrade <= 79) {
+					alert("Number Grade= " + numGrade + "\n Letter Grade= C");
+				} else if (numGrade >= 60 && numGrade <= 67) {
+					alert("Number Grade= " + numGrade + "\n Letter Grade= D");
+				} else if (numGrade < 60) {
+					alert("Number Grade= " + numGrade + "\n Letter Grade= F");
+				}
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	<main>
+		<h1>This page is displayed after the JavaScript is executed</h1>
+	</main>
+</body>
+
+</html>
