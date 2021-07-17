@@ -12,8 +12,21 @@ var toggle = function () {
   h2Elements = faqs.getElementsByTagName("h2");
   console.log(h2);
   for (const element of h2Elements) {
-    element.removeAttribute("class");
-    element.nextElementSibling.removeAttribute("class");
+    if (element == h2) {
+      if (h2.hasAttribute("class")) {
+        h2.removeAttribute("class");
+      } else {
+        h2.setAttribute("class", "minus");
+      }
+      if (div.hasAttribute("class")) {
+        div.removeAttribute("class");
+      } else {
+        div.setAttribute("class", "open");
+      }
+    } else {
+      element.removeAttribute("class");
+      element.nextElementSibling.removeAttribute("class");
+    }
     //   toggle plus and minus image in h2 elements by adding or removing a class
     // if (h2.hasAttribute("class")) {
     //   h2.removeAttribute("class");
@@ -28,8 +41,6 @@ var toggle = function () {
     //   div.setAttribute("class", "open");
     // }
   }
-  h2.setAttribute("class", "minus");
-  div.setAttribute("class", "open");
 };
 
 window.onload = function () {
