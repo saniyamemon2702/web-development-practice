@@ -7,33 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Score Application</title>
     <link rel="stylesheet" href="main.css">
-    <script>
-        var entry;
-        var average;
-        var total = 0;
 
-        //get 4 scores from user and add them together 
-        entry = prompt("Enter test score");
-        entry = parseInt(entry);
-        var score1 = entry; total = total + score1;
-
-        entry = prompt("Enter test score");
-        entry = parseInt(entry);
-        var score2 = entry; total = total + score2;
-
-        entry = prompt("Enter test score");
-        entry = parseInt(entry);
-        var score3 = entry;
-        total = total + score3;
-
-        entry = prompt("Enter test score");
-        entry = parseInt(entry);
-        var score4 = entry;
-        total = total + score4;
-
-        //calculate the average 
-        average = parseInt(total / 3);
-    </script>
 </head>
 
 <body>
@@ -47,6 +21,8 @@
         <br>
         <p> Average Score= <span id="avg"></span></p>
     </div>
+
+    <script src="avgScore.js"></script>
 </body>
 
 </html>
