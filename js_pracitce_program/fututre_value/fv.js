@@ -16,10 +16,14 @@ window.addEventListener("load", (event) => {
   document.getElementById("year").innerText = amount;
   console.log("Years:" + year);
 
+  futureValue = amount;
   for (i = 1; i <= year; i++) {
-    var html = `<p> Year ${i}=${interest} Value=${futureValue}`;
-    futureValue = amount;
-    futureValue = futureValue + (futureValue * interestRate) / 100;
-    document.querySelector(".container").appendChild(html);
+    interest = (futureValue * interestRate) / 100;
+    futureValue += interest;
+    var html = `Year ${i}=${interest} Value=${futureValue}`;
+
+    var p = document.createElement("p");
+    p.innerText = html;
+    document.querySelector(".container").append(p);
   }
 });
